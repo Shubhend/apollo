@@ -1,0 +1,150 @@
+[17-Oct-2019 06:27:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home1/myapollo/public_html/db/config.php:108
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(108): PDO->query('SELECT * FROM a...')
+#1 /home1/myapollo/public_html/template/addevent.php(175): easyfeature->fetchrow('SELECT * FROM a...', 'country')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 108
+[17-Oct-2019 06:28:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home1/myapollo/public_html/db/config.php:108
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(108): PDO->query('SELECT * FROM a...')
+#1 /home1/myapollo/public_html/template/addevent.php(175): easyfeature->fetchrow('SELECT * FROM a...', 'country')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 108
+[17-Oct-2019 06:29:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home1/myapollo/public_html/db/config.php:108
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(108): PDO->query('SELECT * FROM a...')
+#1 /home1/myapollo/public_html/template/addevent.php(175): easyfeature->fetchrow('SELECT * FROM a...', 'country')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 108
+[17-Oct-2019 06:30:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home1/myapollo/public_html/db/config.php:108
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(108): PDO->query('SELECT * FROM a...')
+#1 /home1/myapollo/public_html/template/addevent.php(176): easyfeature->fetchrow('SELECT * FROM a...', 'country')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 108
+[17-Oct-2019 07:05:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' ,to='2019-10-18'  , countryid='4cid',  venu='sdfdsf' , date='2' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE `apollo_...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE `apollo_...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:06:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' ,to='2019-10-18'  , countryid='2',  venu='sdfdsf' , date='2019' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE `apollo_...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE `apollo_...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:09:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' ,to='2019-10-18'  , countryid='2',  venu='sdfdsf' , date='2019' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:11:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:13:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf' , date='201' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:14:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf'   WHERE id=' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:14:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf' , date='201' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:15:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf'  WHERE id='' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:18:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf'  WHERE id='' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(399): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:23:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf' WHERE id='1' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(399): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:24:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07' , to='2019-10-18'  , countryid='2',  venu='sdfdsf' WHERE id='1' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(399): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:25:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07'  WHERE id='1'' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(399): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:28:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from='2019-10-07', to='2019-10-18'  WHERE id='1'' at line 1 in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_e...')
+#1 /home1/myapollo/public_html/template/addevent.php(400): easyfeature->update('UPDATE apollo_e...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[17-Oct-2019 07:50:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myapollo_db.apollo_dealers' doesn't exist in /home1/myapollo/public_html/db/config.php:55
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(55): PDO->query('INSERT INTO `ap...')
+#1 /home1/myapollo/public_html/template/adddealer.php(129): easyfeature->insert('INSERT INTO `ap...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 55
+[17-Oct-2019 09:06:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myapollo_db.apollo_dealers' doesn't exist in /home1/myapollo/public_html/db/config.php:67
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(67): PDO->query('select * from a...')
+#1 /home1/myapollo/public_html/template/index.php(117): easyfeature->checkduplicate('select * from a...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 67
+[17-Oct-2019 10:44:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myapollo_db.apollo_code' doesn't exist in /home1/myapollo/public_html/db/config.php:75
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(75): PDO->query('UPDATE apollo_c...')
+#1 /home1/myapollo/public_html/template/addcountry.php(174): easyfeature->update('UPDATE apollo_c...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 75
+[18-Oct-2019 03:14:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/template/addevent.php:1) in /home1/myapollo/public_html/template/header.php on line 4
+[18-Oct-2019 03:16:40 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/addevent.php:1) in /home1/myapollo/public_html/template/header.php on line 2
+[18-Oct-2019 03:22:34 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/header.php on line 2
+[18-Oct-2019 03:34:13 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/header.php on line 2
+[19-Oct-2019 00:14:41 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/index.php on line 3
+[19-Oct-2019 00:16:13 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/index.php on line 3
+[19-Oct-2019 00:22:51 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/index.php on line 3
+[19-Oct-2019 00:24:23 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/index.php on line 3
+[19-Oct-2019 00:28:10 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/myapollo/public_html/template/index.php:1) in /home1/myapollo/public_html/template/index.php on line 3
+[19-Oct-2019 02:28:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''3' at line 1 in /home1/myapollo/public_html/db/config.php:48
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(48): PDO->query('select * from a...')
+#1 /home1/myapollo/public_html/template/eventDetail.php(310): easyfeature->fetch('select * from a...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 48
+[19-Oct-2019 02:50:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/myapollo/public_html/template/viewPhotos.php on line 493
+[19-Oct-2019 02:51:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/myapollo/public_html/template/viewPhotos.php on line 494
+[19-Oct-2019 02:53:34 UTC] PHP Parse error:  syntax error, unexpected end of file in /home1/myapollo/public_html/template/viewPhotos.php on line 495
+[19-Oct-2019 02:59:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in /home1/myapollo/public_html/db/config.php:48
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(48): PDO->query('')
+#1 /home1/myapollo/public_html/template/viewPhotos.php(288): easyfeature->fetch(NULL)
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 48
+[19-Oct-2019 03:14:03 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325
+[19-Oct-2019 03:14:08 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325
+[19-Oct-2019 03:14:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325
+[19-Oct-2019 03:14:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325
+[19-Oct-2019 03:14:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325
+[19-Oct-2019 03:15:23 UTC] PHP Parse error:  syntax error, unexpected '?' in /home1/myapollo/public_html/template/index.php on line 325

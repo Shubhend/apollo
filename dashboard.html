@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+	<title>BAy 81 photo click App</title>
+	<link rel="stylesheet" type="text/css" href="./media/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<style type="text/css" class="init">
+	@import "https://fonts.googleapis.com/css?family=Quicksand";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+	
+	.display{
+	background-color:#c3cfe2;
+	border-radius: 12px
+	}
+	
+	
+html {
+  background-color: #FAFAFA;
+}
+	
+	body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+	}
+	
+	tr{
+	font-size: 0.9em
+	}
+	
+	td{
+	font-size: 0.8em
+	}
+	#Select {
+	border: 1.2px solid #027aed;
+	border-radius: 5px;
+	text-decoration:none;
+	background-color: #A0A0A1;
+	padding: 5px;
+	color:#fff
+	}
+	</style>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="./media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="./resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="./resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+	
+
+$(document).ready(function() {
+	$('#example').DataTable( {
+	  responsive: true,
+		initComplete: function () {
+			this.api().columns().every( function () {
+				var column = this;
+				var select = $('<select id="Select" ><option value="">'+this.header().textContent +'</option></select>')
+					.appendTo( $("#ff") )
+					.on( 'change', function () {
+						var val = $.fn.dataTable.util.escapeRegex(
+							$(this).val()
+						);
+
+						column
+							.search( val ? '^'+val+'$' : '', false, false )
+							.draw();
+					} );
+
+				column.data().unique().sort().each( function ( d, j ) {
+					select.append( '<option value="'+d+'" Style="background-color:#E2E2E2;color: #000">'+d+'</option>' )
+				} );
+			} );
+		}
+	} );
+} );
+
+
+	</script>
+</head>
+<body class="dt-example" Style="background-color: #e2ebf0;">
+	<div class="row" Style="background-color: #c3cfe2;margin-left: 0px;margin-right: 0px" align="center" >
+			<div class="col-sm-3">
+				<h1 Style="color: #027aed"><strong>Bay 81</strong><span> with  Akay's</span></h1>
+			</div>
+			<div class="col-sm-6"></div>
+			<div class="col-sm-2" align="right" Style="padding:10px">
+			<a href="./Signup.html"><Button type="button" class="btn btn-primary">SignUp</Button></a>
+			</div>
+			<div class="col-sm-1" align="left" Style="padding:10px">
+				<a href="./index.html"><Button type="button" class="btn btn-danger">Logout</Button></a>
+			</div>
+	</div>
+	<div class="container-fluid" Style="margin-top: 20px;margin-left:0px;margin-right:0px;">
+		<div class="demo-html"></div>
+		 <div id="ff"></div>
+		<section Style="margin-top: 40px;">
+		   
+			<table id="example" class="display" Style="margin-bottom:20px;">
+				<thead>
+					<tr>
+						<th>Dealers</th>
+						<th>Client Name</th>
+						<th>Email</th>
+						<th>Event Names</th>
+						<th>Photos</th>
+						<th>Date</th>
+						<th>Mobile Number</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Tiger Nixon</td>
+						<td>System Architect</td>
+						<td>sunny@gmail.com</td>
+						<td>Edinburgh</td>
+						<td>61</td>
+						<td>2011/04/25</td>
+						<td>9658740979</td>
+					</tr>
+					<tr>
+						<td>Garrett Winters</td>
+						<td>Accountant</td>
+						<td>sunpreet@gmail.com</td>
+						<td>Tokyo</td>
+						<td>63</td>
+						<td>2011/07/25</td>
+						<td>9849170750</td>
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Ashton Cox</td>
+						<td>Junior Technical Author</td>
+						<td>San@yahoo.com</td>
+						<td>San</td>
+						<td>66</td>
+						<td>2009/01/12</td>
+						<td>9848386000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Cedric Kelly</td>
+						<td>Senior Javascript Developer</td>
+						<td>Edinburgh@yahoo.com</td>
+						<td>Edinburgh</td>
+						<td>22</td>
+						<td>2012/03/29</td>
+						<td>9238433060</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Airi Satou</td>
+						<td>Accountant</td>
+						<td>Tokyo@yahoo.com</td>
+						<td>Tokyo</td>
+						<td>33</td>
+						<td>2008/11/28</td>
+						<td>9227162700</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Brielle Williamson</td>
+						<td>Integration Specialist</td>
+						<td>York@gmail.com</td>
+						<td>New York</td>
+						<td>61</td>
+						<td>2012/12/02</td>
+						<td>9573372000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Herrod Chandler</td>
+						<td>Sales Assistant</td>
+						<td>Francisco@yahoo.com</td>
+						<td>San Francisco</td>
+						<td>59</td>
+						<td>2012/08/06</td>
+						<td>9732137500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Rhona Davidson</td>
+						<td>Integration Specialist</td>
+						<td>okyo@yahoo.com</td>
+						<td>Tokyo</td>
+						<td>55</td>
+						<td>2010/10/14</td>
+						<td>9724327900</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Colleen Hurst</td>
+						<td>Javascript Developer</td>
+						<td>rancisco@yahoo.com</td>
+						<td>San Francisco</td>
+						<td>39</td>
+						<td>2009/09/15</td>
+						<td>9754205500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Sonya Frost</td>
+						<td>Software Engineer</td>
+						<td>ngineer@gmail.com</td>
+						<td>Edinburgh</td>
+						<td>23</td>
+						<td>2008/12/13</td>
+						<td>7936103600</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Jena Gaines</td>
+						<td>Office Manager</td>
+						<td>nager@gmail.com</td>
+						<td>London</td>
+						<td>30</td>
+						<td>2008/12/19</td>
+						<td>903242560</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Quinn Flynn</td>
+						<td>Support Lead</td>
+						<td>ead@yahoo.com</td>
+						<td>Edinburgh</td>
+						<td>22</td>
+						<td>2013/03/03</td>
+						<td>9567876000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Charde Marshall</td>
+						<td>Regional Director</td>
+						<td>irector@gmail.com</td>
+						<td>San Francisco</td>
+						<td>36</td>
+						<td>2008/10/16</td>
+						<td>99886470600</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Haley Kennedy</td>
+						<td>Senior Marketing Designer</td>
+						<td>Senesigner@gmail.com</td>
+						<td>London</td>
+						<td>43</td>
+						<td>2012/12/18</td>
+						<td>9374313500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Tatyana Fitzpatrick</td>
+						<td>Regional Director</td>
+						<td>London</td>
+						<td>don@yahoo.com</td>
+						<td>19</td>
+						<td>2010/03/17</td>
+						<td>7982385750</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Michael Silva</td>
+						<td>Marketing Designer</td>
+						<td>ignere@yahoo.com</td>
+						<td>London</td>
+						<td>66</td>
+						<td>2012/11/27</td>
+						<td>7982198500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Paul Byrd</td>
+						<td>Chief Financial Officer (CFO)</td>
+						<td>Officer@gmail.com</td>
+						<td>New York</td>
+						<td>64</td>
+						<td>2010/06/09</td>
+						<td>7982725000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Gloria Little</td>
+						<td>Systems Administrator</td>
+						<td>Systtor@gmail.com</td>
+						<td>New York</td>
+						<td>59</td>
+						<td>2009/04/10</td>
+						<td>7982237500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Bradley Greer</td>
+						<td>Software Engineer</td>
+						<td>Softneer@gmail.com</td>
+						<td>London</td>
+						<td>41</td>
+						<td>2012/10/13</td>
+						<td>9982132000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Dai Rios</td>
+						<td>Personnel Lead</td>
+						<td>Edinburgh</td>
+						<td>Edinh@yahoo.com</td>
+						<td>35</td>
+						<td>2012/09/26</td>
+						<td>9878217500</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+					<tr>
+						<td>Jenette Caldwell</td>
+						<td>Development Lead</td>
+						<td>Developed@gmail.com</td>
+						<td>New York</td>
+						<td>30</td>
+						<td>2011/09/03</td>
+						<td>9583345000</td>
+ 
+						<td><Button type="button" class="btn btn-outline-danger">Remove</Button></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Client Name</th>
+						<th>Dealers</th>
+						<th>Email</th>
+						<th>Event Names</th>
+						<th>Photos</th>
+						<th>Date</th>
+						<th>Mobile Number</th>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+	</div><br /><br /><br /><br /><br />
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+	<title>BAy 81 photo click App</title>
+	<link rel="stylesheet" type="text/css" href="./media/css/jquery.dataTables.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<style>
+@import "https://fonts.googleapis.com/css?family=Quicksand";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #FAFAFA;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  font-size: 0.98em;
+  color: #8a97a0;
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+}
+
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 6%;
+  margin: 0;
+}
+
+form {
+  background-color: #FFF;
+  padding: 2em;
+  padding-bottom: 3em;
+  border-radius: 8px;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+form input {
+  color: #384047;
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06) inset;
+  border: none;
+  border-radius: 4px;
+  padding: 1em;
+  margin-bottom: 1.2em;
+  width: 100%;
+}
+form input:focus {
+  outline: none;
+}
+
+.button {
+  font-weight: 600;
+  text-align: center;
+  font-size: 19px;
+  color: #FFF;
+  background-color: #4bc970;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.button:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+.button span {
+  position: relative;
+  z-index: 1;
+}
+.button .circle {
+  position: absolute;
+  z-index: 0;
+  background-color: #35A556;
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 5;
+  height: 50px;
+  width: 50px;
+}
+.button .circle.animate {
+  animation: grow 0.5s linear;
+}
+@keyframes grow {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+.button .signup-message {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+</style>
+</head>
+<body>
+	<div class="row" Style="background-color: #c3cfe2;margin-left: 0px;margin-right: 0px;" align="center" >
+			<div class="col-sm-3">
+				<h1 Style="color: #027aed"><strong>Bay 81</strong><span> with  Akay's</span></h1>
+			</div>
+			<div class="col-sm-6"></div>
+			<div class="col-sm-2" align="right" Style="padding:10px">
+				<a href="./Signup.html"><Button type="button" class="btn btn-primary">SignUp</Button></a>
+			</div>
+			<div class="col-sm-1" align="left" Style="padding:10px">
+				<a href="./index.html"><Button type="button" class="btn btn-danger">Logout</Button></a>
+			</div>
+	</div>
+<div class="row" align="center" Style="margin-top:40px;margin-left:0px;margin-right:0px;height:700px">
+<div class="col-sm-2"></div>
+<div class="col-sm-8">
+  <form action="index.html" method="post">
+    <h2><strong>Create New Dealer</strong></h2><br />
+    <div class="form-content">
+		<input id="user-name" name="user-name" placeholder="Please enter your email" type="text" />
+		<input id="password" name="password" placeholder="Please enter your password" type="password" /><br />
+		<input id="password" name="confirmpassword" placeholder="Please confirm your password" type="password" /><br />
+      <a href="./dashboard.html"><div class="button">
+        SignUp
+      </div></a>
+      <br />
+    </div>
+  </form>
+ </div>
+ <div class="col-sm-2"></div>
+</div>
+<script>
+$(document).ready ->
+  material.init()
+ 
+material =
+  init: ->
+    @bind_events()
+   
+  bind_events: ->
+    $(document).on "click", ".button", (e) ->
+      e.preventDefault()
+      circle = $("<div class='circle'></div>")
+      $(this).append(circle)
+      x = e.pageX - $(this).offset().left - circle.width()/2
+      y = e.pageY - $(this).offset().top - circle.height()/2
+      size = $(this).width()
+      circle.css(
+        top: y+'px'
+        left: x+'px'
+        width: size+'px'
+        height: size+'px'
+      ).addClass("animate")
+      setTimeout(->
+        circle.remove()
+      , 500)
+</script>
+</body>
+</html>

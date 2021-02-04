@@ -1,0 +1,37 @@
+[14-Oct-2019 02:50:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:2) in /home1/myapollo/public_html/index.php on line 149
+[14-Oct-2019 02:51:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:2) in /home1/myapollo/public_html/index.php on line 149
+[17-Oct-2019 08:48:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause' in /home1/myapollo/public_html/db/config.php:67
+Stack trace:
+#0 /home1/myapollo/public_html/db/config.php(67): PDO->query('select * from a...')
+#1 /home1/myapollo/public_html/index.php(147): easyfeature->checkduplicate('select * from a...')
+#2 {main}
+  thrown in /home1/myapollo/public_html/db/config.php on line 67
+[18-Oct-2019 03:20:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:22:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:23:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:23:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:34:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:35:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:36:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:36:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:37:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:37:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 03:38:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 04:24:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 04:38:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 11:50:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 11:58:57 UTC] PHP Warning:  imagecreatefromstring(): Empty string or invalid image in /home1/myapollo/public_html/try.php on line 6
+[18-Oct-2019 11:58:57 UTC] PHP Warning:  imagerotate() expects parameter 1 to be resource, boolean given in /home1/myapollo/public_html/try.php on line 7
+[18-Oct-2019 11:58:57 UTC] PHP Warning:  imagejpeg() expects parameter 1 to be resource, boolean given in /home1/myapollo/public_html/try.php on line 9
+[18-Oct-2019 11:58:57 UTC] PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home1/myapollo/public_html/try.php on line 10
+[18-Oct-2019 18:28:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 19:11:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 19:18:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 19:29:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 19:33:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[18-Oct-2019 23:04:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[19-Oct-2019 00:08:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[19-Oct-2019 00:09:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[19-Oct-2019 00:12:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[19-Oct-2019 00:22:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
+[19-Oct-2019 00:23:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/myapollo/public_html/index.php:4) in /home1/myapollo/public_html/index.php on line 153
